@@ -1,0 +1,109 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 10;
+  background: white;
+  width: 500px;
+  max-width: 80%;
+  padding: 15px;
+}
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.popup-header .close-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.input-box {
+  padding: 8px;
+  margin: 20px;
+}
+#firstName {
+  width: 20rem;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+#lastName {
+  width: 20rem;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+#email {
+  width: 20rem;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+.sign-up {
+  width: 70%;
+  padding: 10px;
+  margin-left: 15%;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  font-size: larger;
+  cursor: pointer;
+}
+p {
+  margin-left: 30px;
+}
+.click {
+  cursor: pointer;
+  margin-left: 45%;
+  margin-top: 30px;
+  padding: 10px;
+  width: 10rem;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.popup body {
+  padding: 10px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
