@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Popup</title>
+
     <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
   </head>
@@ -11,16 +13,14 @@
     <button data-popup-target="#popup" class="click">Open popup</button>
     <div class="popup" id="popup">
       <div class="popup-header">
-        <div class="title">Join our Newsletter</div>
+        <div class="title">Brief summary</div>
         <button data-close-btn class="close-btn">&times;</button>
       </div>
-      <p>Sign up to receive the latest newsletter</p>
-      <div class="input-box">
-        <input type="text" name="" id="firstName" placeholder="firstname" />
-        <input type="text" id="lastName" placeholder="lastname" />
-        <input type="text" name="" id="email" placeholder="email" />
+      <div class="summary">
+        I am a self-taught web developer. I believe in motivation, a strong work
+        ethic, and thirst for learning are more important than a degree. My
+        passion towards code leads to developing my programming knowledge.
       </div>
-      <button class="sign-up">Sign Up</button>
     </div>
     <div id="overlay"></div>
   </body>

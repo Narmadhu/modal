@@ -39,44 +39,7 @@
   font-weight: bolder;
   font-size: 2rem;
 }
-.input-box {
-  padding: 8px;
-  margin: 20px;
-}
-#firstName {
-  width: 20rem;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
-}
-#lastName {
-  width: 20rem;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
-}
-#email {
-  width: 20rem;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
-}
-.sign-up {
-  width: 70%;
-  padding: 10px;
-  margin-left: 15%;
-  color: white;
-  background-color: black;
-  border: none;
-  outline: none;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  font-size: larger;
-  cursor: pointer;
-}
-p {
-  margin-left: 30px;
-}
+
 .click {
   cursor: pointer;
   margin-left: 45%;
@@ -106,4 +69,8 @@ p {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+.summary {
+  padding: 12px;
+  font-size: large;
 }
